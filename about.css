@@ -2,12 +2,26 @@
 /* ~~~~~~~~~~~~~~~~~Elements~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    border: 1px solid black;
+    margin: 0px;
+}
+
 header {
-    background-color: gray;
+    border: 2px solid black;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 main {
-    background-color: rgb(58,140,65);
+    background-color: rgb(58, 140, 65);
+    padding-top: 10px;
 }
 
 footer {
@@ -19,6 +33,96 @@ footer {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~Classes~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.photobanner {
+	height: 220px;
+	width: 8640px;
+	margin-bottom: 80px;
+}
+/*keyframe animations*/
+.first {
+	-webkit-animation: bannermove 50s linear infinite;
+	   -moz-animation: bannermove 50s linear infinite;
+	    -ms-animation: bannermove 50s linear infinite;
+	     -o-animation: bannermove 50s linear infinite;
+	        animation: bannermove 50s linear infinite;
+}
+
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -5746px;
+ }
+
+}
+
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -5746px;
+ }
+
+}
+
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -5746px;
+ }
+
+}
+
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -5746px;
+ }
+
+}
+
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -5746px;
+ }
+
+}
+.photobanner {
+	height: 242px;
+	width: 8640px;
+	margin-bottom: 80px;
+}
+
+.photobanner img {
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.photobanner img:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+	cursor: pointer;
+
+	-webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
 
 .veterans {
     display: flex;
@@ -38,7 +142,17 @@ footer {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 50%;
+}
+
+@media only screen and (min-width: 576px) {
+    .celebrate {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
 }
 
 .struggle {
@@ -46,7 +160,17 @@ footer {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 50%;
+}
+
+@media only screen and (min-width: 576px) {
+    .struggle {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
 }
 
 .hopeful {
@@ -54,7 +178,17 @@ footer {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 50%;
+}
+
+@media only screen and (min-width: 576px) {
+    .hopeful {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
 }
 
 .impact {
@@ -62,14 +196,35 @@ footer {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 50%;
+}
+
+@media only screen and (min-width: 576px) {
+    .impact {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
 }
 
 .social {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     align-content: stretch;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~IDs~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#container {
+ width: 100%;
+ overflow: hidden;
+ margin: 50px auto;
+ background: transparent;
 }
