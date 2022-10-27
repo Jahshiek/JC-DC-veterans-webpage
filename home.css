@@ -3,6 +3,7 @@
     overflow: hidden;
     background-color: red;
     font-family: Arial;
+    /*display-items*/
     display: flex;
     justify-content: space-between;
 }
@@ -44,8 +45,8 @@ img {
 
 .dropdown-content {
     position: relative;
-    top: 60px;
-    right: 10px;
+    top: 49px;
+    right: 0px;
 }
 
 /* Add a red background color to navbar links on hover */
@@ -129,9 +130,22 @@ html {
 }
 .content h1{
     font-size: 3em;
+    color:white;
 }
 .content p{
     font-size:2em;
+    color:white;
+}
+
+.social {
+    padding:20px 0px;
+  /*flex-items*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
 }
 
 @keyframes change {

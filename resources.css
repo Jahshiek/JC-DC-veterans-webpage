@@ -2,6 +2,9 @@
     box-sizing: border-box;
 }
 
+
+/*Doujay work*/
+
 body{
     /*flex-wrap:wrap;*/
     
@@ -14,8 +17,8 @@ body{
   /*.....*/
   
      background-image: url('o.mp4');
-  background-repeat: no-repeat;
-  background-attachment: fixed;  */  /*enable for phone view
+    background-repeat: no-repeat;
+  background-attachment: fixed;   /*enable for phone view
   background-size: cover;
   
   
