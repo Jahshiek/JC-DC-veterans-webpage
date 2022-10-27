@@ -1,7 +1,7 @@
 /* Navbar container */
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: red;
     font-family: Arial;
     display: flex;
     justify-content: space-between;
@@ -82,4 +82,75 @@ img {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/*Main Section*/
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.top {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(army1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 20s infinite ease-in-out;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+.content a {
+    background-color: blue;
+    padding: 20px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.content a:hover {
+    background-color: red;
+
+}
+.content h1{
+    font-size: 3em;
+}
+.content p{
+    font-size:2em;
+}
+
+@keyframes change {
+    0% {
+        background-image: url(army2.jpg);
+    }
+    20% {
+        background-image: url(army3.jpg);
+    }
+    40% {
+        background-image: url(army6.jpg);
+    }
+    60% {
+        background-image: url(army4.jpg);
+    }
+    80% {
+        background-image: url(army5.jpg);
+    }
+    100% {
+        background-image: url(army2.jpg);
+    }
 }
