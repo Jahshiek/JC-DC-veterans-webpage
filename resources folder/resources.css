@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+.work{
+    visibility: hidden;
+}
+
 body{
     /*flex-wrap:wrap;*/
     
@@ -32,6 +36,9 @@ body{
   /*https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif*/
 }
 /*......*/
+
+
+
 
 body {
   margin: 0;
@@ -76,8 +83,135 @@ body {
 
 /*........*/
 
+/*JAHS HEADER*/
+    /*#menu {*/
+    /*    display: flex;*/
+    /*    justify-content: space-between;*/
+    /*    align-items: center;*/
+    /*    width: 100%;*/
+    /*    height: 80px;*/
+    /*    margin-top: 10px;*/
+    /*}*/
+    
+    /*#menu img {*/
+    /*    width: 215px;*/
+    /*    height: 75px;*/
+    /*    margin-left: 40px;*/
+    /*}*/
+    
+    /*#menu ul {*/
+    /*    margin-right: 100px;*/
+    /*}*/
+    
+    /*#menu ul li {*/
+    /*    display: inline;*/
+    /*    list-style: none;*/
+    /*}*/
+    
+    /*#menu ul li a {*/
+    /*    display: inline-block;*/
+    /*    list-style: none;*/
+    /*    text-transform: uppercase;*/
+    /*    text-decoration: none;*/
+    /*    background-color: opacity;*/
+        /*change to inherit*/
+    /*    padding: 10px 20px;*/
+    /*    font-weight: bold;*/
+    /*    color: black;*/
+        /*transition: color 0.5 linear;*/
+    /*}*/
+    
+    /*#menu ul li a:hover {*/
+    /*    color: red;*/
+    /*}*/
+    
+    /*#content {*/
+    /*    width: 80%;*/
+    /*    margin: 0% auto;*/
+    /*    display: flex;*/
+    /*    justify-content: space-around;*/
+    /*    align-items: flex-start;*/
+    /*}*/
+    
+    /*.text {*/
+    /*    margin-top: 120px;*/
+        /*font-family:;*/
+    /*    position: relative;*/
+    /*    width: 40%;*/
+    /*}*/
+    
+    /*.image img {*/
+    /*    position: relative;*/
+    /*    width: 170%;*/
+    /*    height: 660px;*/
+    /*}*/
+    
+    /*.text h1 {*/
+    /*    color: blue;*/
+    /*    font-size:30px;*/
+    /*    line-height: 1.5em;*/
+    /*}*/
+    
+    /*.text p {*/
+    /*    font-size: 20px;*/
+    /*    color: red;*/
+    /*    line-height: 2em;*/
+    /*}*/
+    
+    /*.text input {*/
+    /*    margin-top: 25px;*/
+    /*    width: 100%;*/
+    /*    padding: 20px;*/
+    /*    cursor: pointer;*/
+    /*}*/
+    
+    /*.button {*/
+    /*    float: right;*/
+    /*    width: 20%;*/
+    /*    border-radius: 50px;*/
+    /*    padding: 15px 0px;*/
+    /*    text-transform: uppercase;*/
+    /*    text-align: center;*/
+    /*    font-weight: 900;*/
+    /*    margin-top: 20px;*/
+    /*    border: 2px solid black;*/
+    /*    display: inline-block;*/
+    /*    cursor: pointer;*/
+    
+    /*}*/
+    
+    /*.button:hover {*/
+    /*    background-color: blue;*/
+    /*}*/
+    
+    /*.social {*/
+    /*    display: flex;*/
+    /*    flex-direction: row;*/
+    /*    flex-wrap: nowrap;*/
+    /*    justify-content: space-around;*/
+    /*    align-items: center;*/
+    /*    align-content: stretch;*/
+    /*}*/
+    
+    /*.social {*/
+    /*    display: flex;*/
+    /*    flex-direction: row;*/
+    /*    flex-wrap: nowrap;*/
+    /*    justify-content: space-around;*/
+    /*    align-items: center;*/
+    /*    align-content: stretch;*/
+    /*    border: 3px solid black;*/
+    /*}*/
+    
+    /*@media(max-width:568px) {*/
+    /*    .text p {*/
+    /*    font-size: 20px;*/
+    /*    color: red;*/
+    /*    line-height: 4em;*/
+    /*}*/
+    /*}*/
 
-
+/*JASH HEADER*/
 
 
 video{
@@ -88,12 +222,14 @@ video{
 }
 
 header{
+    background-color:grey;
     border:2px solid black;
     position:sticky;
     top:0px;
     /*Flex-property*/
     display:flex;
     justify-content:space-between;
+    opacity:83%;
 }
 
 
@@ -104,7 +240,7 @@ section{
   /*width: 100%;*/
  
   /*height:600px;*/
-  opacity:86%;
+  opacity:81%;
   
   
     /*width: 100%;*/
@@ -156,6 +292,9 @@ footer{
   align-content: stretch;
 }
 
+
+
+
 @media(max-width:576px){
     
 /*.social {*/
@@ -190,7 +329,7 @@ section{
   background: lightgreen;
   width: 100%;
   /*height:600px;*/
-  opacity:86%;
+  opacity:81%;
   
   
     width: 100%;
@@ -198,4 +337,11 @@ section{
     /*layer pink for mobile setting*/
 
 } 
+}
+
+
+
+
+yoo{
+    visibility:hidden;
 }
