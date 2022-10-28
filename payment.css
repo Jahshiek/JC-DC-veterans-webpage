@@ -1,54 +1,142 @@
-body{
-    margin:0px;
-    padding:0px;
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #706a5c;
 }
 
-form{
-    width:600px;
-    margin:0 auto;
-    padding:20px;
-    border:3px solid black;
+/*header*/
+.banner {
+    height: 100vh;
+    width: 100%;
+    background-image: url('army8.jpg');
+    /*linear-gradient rgba research*/
+    background-size: cover;
+    background-position: top 100px;
 }
 
-h1{
-    text-align:center;
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px;
+    align-content:center;
+    /*flex-items*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.row{
-    width:100%;
-    padding:15px;
+
+header{
+    background-color:#706a5c;
+    
+}
+
+#home{
+    background-color:#f1bf08;
+    color:black;
+    height:60px;
+    width:60px;
+    border-radius:50%;
+    border:none;
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    font-size:32px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 20px;
+    list-style: none;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: Gold;
+    text-transform: uppercase;
+    Text-decoration: none;
+
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    background-color: Gold;
+    left: 0;
+    bottom: -5px;
+    transition: 1s;
+
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+
+}
+/*headerend*/
+
+form {
+    width: 600px;
+    margin: auto auto;
+    padding: 20px;
+    border: 3px solid black;
+}
+
+h1 {
+    text-align: center;
+}
+
+.row {
+    width: 100%;
+    padding: 15px;
     box-sizing: border-box;
     border-radius: 25px;
-    margin:5px;
-}
-.yo{
-    display:inline-block;
-}
-.row2{
-   padding:10px;
-   border-radius: 25px;
-   margin:5px;
-}
-.button{
-    width:45%;
-    padding:10px;
-    border-radius:25px;
-    font-size:1.25em;
+    margin: 5px;
 }
 
-@media(max-width:568px){
-    body{
-        padding:20px;
-    }
+.yo {
+    display: inline-block;
+}
+
+.row2 {
+    padding: 10px;
+    border-radius: 25px;
+    margin: 5px;
+}
+
+.button {
+    width: 45%;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 1.25em;
+}
+
+.cards{
+    height:60px;
+    width:50%;
+    Border-radius:29px;
     
-    form{
-        width:100%;
+}
+
+
+@media(max-width:568px) {
+    body {
+        padding: 20px;
+    }
+
+    form {
+        width: 100%;
         box-sizing: border-box;
     }
-    .row{
-        display:block;
+
+    .row {
+        display: block;
     }
-    .yo{
-        width:100%;
-        box-sizing:border-box;
+
+    .yo {
+        width: 100%;
+        box-sizing: border-box;
     }
 }

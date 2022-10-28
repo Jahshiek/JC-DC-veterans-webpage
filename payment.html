@@ -5,14 +5,24 @@
     <link rel="stylesheet" href="payment.css" type="text/css" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Payment Information</title>
+    <script src="https://kit.fontawesome.com/de2e4cc8df.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
-<header>
-    
-</header>
 
 <body>
-    <form action='action'>
+    <header>
+        <div class='navbar'>
+            <a href="index.html">
+                <i id='home' class="fa-solid fa-flag-usa"></i>
+            </a>
+            <ul>
+                <li><a href='about.html'>About</a></li>
+                <li><a href='about.html'>Donation</a></li>
+                <li><a href='about.html'>Resources</a></li>
+            </ul>
+        </div>
+    </header>
+    <form class='payment' action='action'>
         <h1 id="">Payment</h1>
         <label for="name">Name</label>
         <br>
@@ -26,24 +36,26 @@
         <br>
         <input class='row' type="number" name="number" id='number' placeholder='0000 0000 0000 0000' />
         <br>
-            <div class='yo'>
-                <label for=""> Card expire</label>
-                <br>
-                <input class='row2' type="month" name="month" id='month' placeholder='MM' />
-            </div>
-            <div class='yo'>
-                <label for="year">Card expire year</label>
-                <br>
-                <input class='row2' type="year" name="year" id='year' placeholder='YYYY' />
+        <div class='yo'>
+            <label for=""> Card expire</label>
+            <br>
+            <input class='row2' type="month" name="month" id='month' placeholder='MM' />
+        </div>
+        <div class='yo'>
+            <label for="year">Card expire year</label>
+            <br>
+            <input class='row2' type="year" name="year" id='year' placeholder='YYYY' />
 
-            </div>
-            <div class='yo'>
-                <label for="CARD CVV">CVC</label>
-                <br>
-                <input class='row2' type="CVC" name="CVC" id='CVC' placeholder='CVC' />
-            </div>
-            <button class='button' type='Button'>Pay</button>
-            <button  class='button' type='buttton'>Pay</button>
+        </div>
+        <div class='yo'>
+            <label for="CARD CVV">CVC</label>
+            <br>
+            <input class='row2' type="CVC" name="CVC" id='CVC' placeholder='CVC' />
+        </div>
+        <form action=thankyou.html>
+            <input class='cards' type="submit" name="Pay Here" value=' Pay ' />
+        </form>
+
     </form>
 </body>
 
