@@ -1,170 +1,117 @@
-/* Navbar container */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    height: 100vh;
+    width: 100%;
+    background-image: url(army6.jpg);
+    /*linear-gradient rgba research*/
+    background-size: cover;
+    background-position: center;
+}
+
 .navbar {
-    overflow: hidden;
-    background-color: red;
-    font-family: Arial;
-    /*display-items*/
+    width: 85%;
+    margin: auto;
+    padding: 35px;
+    /*flex-items*/
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-img {
-    width: 45px;
-    height: 49px;
+#home{
+    background-color:#f1bf08;
+    color:black;
+    height:60px;
+    width:60px;
+    border-radius:50%;
+    border:none;
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    font-size:32px;
 }
 
-/* Links inside the navbar */
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* The dropdown container */
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    /* Important for vertical align on mobile phones */
-    margin: 0;
-    /* Important for vertical align on mobile phones */
-}
-
-.dropdown-content {
+.navbar ul li {
+    display: inline-block;
+    margin: 0 20px;
+    list-style: none;
     position: relative;
-    top: 60px;
-    right: 10px;
 }
 
-/* Add a red background color to navbar links on hover */
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-    background-color: red;
+.navbar ul li a {
+    color: Gold;
+    text-transform: uppercase;
+    Text-decoration: none;
+
 }
 
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    background-color: Gold;
+    left: 0;
+    bottom: -5px;
+    transition: 1s;
+
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/*Main Section*/
-body,
-html {
-    margin: 0;
-    padding: 0;
+.navbar ul li:hover::after {
     width: 100%;
-    height: 100%;
-}
 
-.top {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    background-image: url(army1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    justify-content: center;
-    animation: change 20s infinite ease-in-out;
 }
 
 .content {
+    width: 100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
+    top: 40%;
+    color: #f1bf08;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.content a {
-    background-color: blue;
-    padding: 20px 30px;
+.content h1 {
+    font-size: 80px;
+}
+
+.content p {
+    font-weight: 100;
+    line-hight: 125px;
+}
+
+button {
+    margin: 20px;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
     border-radius: 25px;
-    text-decoration: none;
-    font-size: 25px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 800;
+    color: black;
+    background-color: #f1bf08;
+    cursor: pointer;
 }
 
-.content a:hover {
-    background-color: red;
-
-}
-.content h1{
-    font-size: 3em;
-    color:white;
-}
-.content p{
-    font-size:2em;
-    color:white;
-}
-
+/*footer*/
 .social {
-    padding:20px 0px;
-  /*flex-items*/
+    padding:20px 0;
+    color:#f1bf08;
+    background-color:black;
+   /*flex-items*/ 
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
   align-content: stretch;
-}
-
-@keyframes change {
-    0% {
-        background-image: url(army2.jpg);
-    }
-    20% {
-        background-image: url(army3.jpg);
-    }
-    40% {
-        background-image: url(army6.jpg);
-    }
-    60% {
-        background-image: url(army4.jpg);
-    }
-    80% {
-        background-image: url(army5.jpg);
-    }
-    100% {
-        background-image: url(army2.jpg);
-    }
 }
