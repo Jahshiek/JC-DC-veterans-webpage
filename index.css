@@ -122,3 +122,28 @@ button {
   align-items: center;
   align-content: stretch;
 }
+
+@media(max-width:568px){
+    header {
+    background-color: #eeeeee;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.social {
+    margin-top:20px;
+    padding:20px 0;
+    color:#f1bf08;
+    background-color:black;
+   /*flex-items*/ 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+}
+}

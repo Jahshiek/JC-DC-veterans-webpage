@@ -32,9 +32,9 @@
         <br>
         <input class='row' type="email" name='email' id='email' placeholder='email' />
         <br>
-        <label for="Card">Card</label>
+        <label for="number">Credit Card Number:</label>
         <br>
-        <input class='row' type="number" name="number" id='number' placeholder='0000 0000 0000 0000' />
+        <input class='row' id="number" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder='XXXX XXXX XXXX XXXX' required>
         <br>
         <div class='yo'>
             <label for=""> Card expire</label>
@@ -52,7 +52,7 @@
             <br>
             <input class='row2' type="CVC" name="CVC" id='CVC' placeholder='CVC' />
         </div>
-        <form action=thankyou.html>
+        <form action=thanks.html>
             <input class='cards' type="submit" name="Pay Here" value=' Pay ' />
         </form>
 

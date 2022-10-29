@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    height: 100vh;
+    width: 100%;
+    background-image: url('army10.jpg');
+    /*linear-gradient rgba research*/
+    background-size: cover;
+    background-position: top 100px;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px;
+    align-content: center;
+    /*flex-items*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #706a5c;
+
+}
+
+#home {
+    background-color: #f1bf08;
+    color: black;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 32px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 20px;
+    list-style: none;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: Gold;
+    text-transform: uppercase;
+    Text-decoration: none;
+
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    background-color: Gold;
+    left: 0;
+    bottom: -5px;
+    transition: 1s;
+
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+
+}
+
+/*main*/
+.content {
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+
+}
+
+.content h1 {
+    font-size: 100px;
+    text-transform: uppercase;
+    color:white;
+}
+
+#jah {
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: bounce;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
+
+}
+
+    /*footer*/
+    .social {
+        padding: 20px 0;
+        color: #f1bf08;
+        background-color: black;
+        /*flex-items*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: stretch;
+    }
