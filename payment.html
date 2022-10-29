@@ -24,36 +24,30 @@
     </header>
     <form class='payment' action='action'>
         <h1 id="">Payment</h1>
-        <label for="name">Name</label>
+        <label for="name">Cardholder Name</label>
         <br>
-        <input class='row' type="text" name="name" id='name' placeholder='enter your name'>
+        <input class='row' type="text" name="name" id='name' placeholder='enter your name' required>
         <br>
         <label for="email">Email Address</label>
         <br>
-        <input class='row' type="email" name='email' id='email' placeholder='email' />
+        <input class='row' type="email" name='email' id='email' placeholder='email' required/>
         <br>
         <label for="number">Credit Card Number:</label>
         <br>
         <input class='row' id="number" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder='XXXX XXXX XXXX XXXX' required>
         <br>
         <div class='yo'>
-            <label for=""> Card expire</label>
+            <label for="">Date Of Expiration</label>
             <br>
-            <input class='row2' type="month" name="month" id='month' placeholder='MM' />
-        </div>
-        <div class='yo'>
-            <label for="year">Card expire year</label>
-            <br>
-            <input class='row2' type="year" name="year" id='year' placeholder='YYYY' />
-
+            <input class='row2' type="month" name="month" id='month' placeholder='MM' required/>
         </div>
         <div class='yo'>
             <label for="CARD CVV">CVC</label>
             <br>
-            <input class='row2' type="CVC" name="CVC" id='CVC' placeholder='CVC' />
+            <input class='row2' type="number" name="CVC" id='CVC' placeholder='CVC' required/>
         </div>
-        <form action=thanks.html>
-            <input class='cards' type="submit" name="Pay Here" value=' Pay ' />
+        <form action='thanks.html'>
+            <input class='cards' type="submit" name="Pay Here" value=' Pay '/>
         </form>
 
     </form>
