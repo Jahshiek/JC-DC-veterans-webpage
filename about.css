@@ -89,6 +89,10 @@ header {
 
 }
 
+.directory {
+    text-align: center;
+}
+
 /*header-end*/
 
 .photobanner {
@@ -200,22 +204,22 @@ header {
 
 .action {
     text-align: center;
+    padding: 10px;
 }
 
 .parent {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 0.5fr 4fr;
     grid-template-rows: repeat(3, 1fr);
-    column-gap: 25px;
-    grid-row-gap: 30px;
+    gap: 20px 15px;
 }
 
 @media only screen and (max-width: 480px) {
-  .parent {
-		display: flex;
-		text-align: center;
-		flex-direction: column;
-  }
+    .parent {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
 }
 
 .div1 {
@@ -250,13 +254,13 @@ header {
     width: 50%;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 480px) {
     .celebrate {
         display: block;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        width: 80%;
+        width: 60%;
     }
 }
 
@@ -268,13 +272,13 @@ header {
     width: 50%;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 480px) {
     .struggle {
         display: block;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        width: 80%;
+        width: 60%;
     }
 }
 
@@ -286,13 +290,13 @@ header {
     width: 50%;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 480px) {
     .hopeful {
         display: block;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        width: 80%;
+        width: 60%;
     }
 }
 
@@ -304,20 +308,27 @@ header {
     width: 50%;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 480px) {
     .impact {
         display: block;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        width: 80%;
+        width: 60%;
     }
 }
 
+.reason {
+    list-style-position: inside;
+}
+
 .social {
+    padding: 20px 0;
+    color: #f1bf08;
+    background-color: black;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
     align-content: stretch;
